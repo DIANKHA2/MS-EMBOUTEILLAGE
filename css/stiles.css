@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Popins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #082032;
+}
+
+input[ type="date"]{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #F0A500 url(icon-calendar.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 999;
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: 5px solid #334756;
+}
+
+input[ type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+}
